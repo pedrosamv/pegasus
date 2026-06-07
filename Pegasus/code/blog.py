@@ -15,9 +15,9 @@ def leer_pdf(ruta):
 
 
 
-
-texto_convertibilidad = leer_pdf("C:/Users/usuario/Dropbox/Python/Pegasus/convertibilidad.pdf")
-
+texto_convertibilidad = leer_pdf(
+    os.path.join(ROOT_DIR, "convertibilidad.pdf")
+)
 FONTS_URL = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;600&display=swap"
 
 WRAP = {
