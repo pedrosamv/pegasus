@@ -18,10 +18,10 @@ from dash import clientside_callback, ClientsideFunction
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(BASE_DIR)
 
-data = os.path.join(BASE_DIR, "base_data.xlsx")
-code = os.path.join(BASE_DIR, "code")
-
+data = os.path.join(ROOT_DIR, "base_data.xlsx")
+code = BASE_DIR
 
 app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.BOOTSTRAP],
