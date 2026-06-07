@@ -13,7 +13,10 @@ import textwrap
 from dash import clientside_callback, ClientsideFunction
 
 
-
+pip freeze > requirements.txt
+git add requirements.txt
+git commit -m "Agregar requirements"
+git push
 
 
 
