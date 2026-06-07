@@ -21,8 +21,12 @@ git push
 
 
 #Rutas
-data= r"C:\Users\usuario\Dropbox\Python\Pegasus\base_data.xlsx"
-code = r"C:\Users\usuario\Dropbox\Python\Pegasus\code"
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+data = os.path.join(BASE_DIR, "base_data.xlsx")
+code = os.path.join(BASE_DIR, "code")
 
 
 app = dash.Dash(__name__,
