@@ -1,2 +1,6 @@
-pip freeze > requirements.txt
-dir requirements.txt
+dash
+dash-bootstrap-components
+pandas
+plotly
+openpyxl
+gunicorn
